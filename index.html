@@ -3,49 +3,76 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Restaurant</title>
-    <link rel="stylesheet" href="./styles.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Restaurant Menu</title>
   </head>
+
   <body>
-    <div class="side-bar">
-      <img id="chef1" src="./Assets/chef.png" alt="" />
-      <p class="sub-headings">Your Restaurant Menu</p>
-      <p id="slogan">Your Slogan</p>
-      <p class="sub-headings">Quick Links</p>
-      <ol>
-        <li>Home</li>
-        <li>Your Orders</li>
-        <li>Wallet</li>
-        <li>Profile</li>
-        <li>Logout</li>
-      </ol>
-      <p class="sub-headings">More About Us</p>
-      <ol>
-        <li>Our blog</li>
-        <li>Upcoming Dishes</li>
-        <li>Our Story</li>
-        <li>Social Media Links</li>
-      </ol>
-    </div>
-    <div class="navbar">
-      <div id="search-container">
-        <!-- <img
-          id="search-icon"
-          src="./Assets/search-svgrepo-com.svg"
-          alt="search-icon"
-        /> -->
-        <input type="text" id="search-bar" placeholder="Search Food Item" />
-        <button class="btn">Signup</button>
-        <button class="btn">Login</button>
-        <img id="profile-icon" src="./Assets/chef.png" alt="">
+    <!-- Initial Main Container -->
+    <div class="main_container">
+      <div class="left_container">
+        <div class="image_container">
+          <img src="./Assets/chef.png" />
+          <h3>Your Restaurant Menu</h3>
+          <h4>Your Slogan</h4>
+        </div>
+        <div class="list1_container">
+          <h3 class="list1_head">Quick Links</h3>
+          <ol>
+            <li>Home</li>
+            <li>Your Orders</li>
+            <li>Wallet</li>
+            <li>Profile</li>
+            <li>Logout</li>
+          </ol>
+        </div>
+        <div class="list2_container">
+          <h3 class="list2_head">More About Us</h3>
+          <ol>
+            <li>Our Blog</li>
+            <li>Upcoming Dishes</li>
+            <li>Our Story</li>
+            <li>Social Media Links</li>
+          </ol>
+        </div>
+      </div>
+
+      <div class="right_container">
+        <nav>
+          <div class="nav">
+            <i class="ri-search-line"></i
+            ><input type="search" placeholder="Search Food Item" />
+            <button class="btn">Signup</button>
+            <button class="btn">Login</button>
+            <img
+              src="./Assets/navbar_chef.png"
+              alt="burger-icon"
+              class="navburger"
+            />
+          </div>
+        </nav>
+        <div class="poster">
+          <img src="./Assets/homepage.png" alt="poster" />
+        </div>
+        <h2 class="menu">Menu</h2>
+        <div class="main_container_items">
+          <!-- Initial content or cards -->
+        </div>
       </div>
     </div>
-    <div class="homepage"></div>
-    <div class="menu"></div>
 
-    <!-- <h1>Restaurant Menu</h1>
-    <div id="menu"></div>
-    <button id="orderBtn">Order Now</button> -->
+    <!-- Separate Menu Screen (hidden by default) -->
+    <div class="menu_screen" style="display: none">
+      <div class="menu_container">
+        <!-- Menu items will be dynamically inserted -->
+      </div>
+    </div>
+
     <script src="script.js"></script>
+    <script src="menu.js"></script>
   </body>
 </html>
